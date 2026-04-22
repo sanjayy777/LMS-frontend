@@ -1,0 +1,160 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #222;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #0097a7;
+}
+
+/* Animation */
+.hero {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Sections layout */
+.features, .courses {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+  transform: translateY(20px);
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f4f4f4;
+}
+
+.cta button {
+  padding: 10px 20px;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta button:hover {
+  background: #0097a7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.courses-page {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.courses-page img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0097a7;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 40px auto;
+}
+
+.form input,
+.form textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.form button {
+  padding: 10px;
+}
+
+#error {
+  color: red;
+  font-size: 14px;
+}
